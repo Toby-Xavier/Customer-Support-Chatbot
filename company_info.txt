@@ -1,0 +1,79 @@
+Company Name:
+ZeniPay Technologies Ltd
+
+Head Office Address:
+3rd Floor, Adeola House,
+Victoria Island,
+Lagos State, Nigeria
+
+Company Overview:
+ZeniPay Technologies Ltd is a Nigerian financial technology company that provides secure digital payment solutions for individuals and small businesses. The company focuses on simplifying everyday financial transactions within Nigeria.
+
+Core Services:
+- Digital wallet for storing and transferring funds
+- Wallet-to-wallet transfers between ZeniPay users
+- Bank transfers to Nigerian commercial banks
+- Utility bill payments (electricity, water, internet, cable TV)
+- Airtime and mobile data purchases
+- Payment APIs for merchants and small businesses
+
+Supported Banks:
+ZeniPay supports transfers to all major Nigerian banks, including:
+- Access Bank
+- GTBank
+- First Bank of Nigeria
+- Zenith Bank
+- United Bank for Africa (UBA)
+- Fidelity Bank
+- Union Bank
+- Sterling Bank
+
+Mobile Networks Supported:
+- MTN Nigeria
+- Airtel Nigeria
+- Glo Nigeria
+- 9mobile
+
+Operating Hours:
+Customer support is available:
+- Monday to Friday: 8:00 AM – 6:00 PM (WAT)
+- Saturday: 9:00 AM – 2:00 PM (WAT)
+- Sunday and public holidays: Closed
+
+Customer Support Channels:
+- Email: support@zenipay.ng
+- Phone: +234 800 000 1234
+- In-app chat support
+
+Account Registration Requirements:
+- A valid Nigerian mobile phone number
+- A unique email address
+
+KYC Verification Levels:
+- Level 1: Phone number verification (daily limit: ₦50,000)
+- Level 2: Government-issued ID verification (daily limit: ₦500,000)
+- Level 3: Full verification including proof of address (daily limit: ₦5,000,000)
+
+Transaction Fees:
+- Wallet-to-wallet transfers: Free
+- Bank transfers: ₦25 per transaction
+- Airtime and data purchases: No additional fees
+
+Transaction Processing:
+- Most transfers are processed instantly.
+- In rare cases, bank transfers may take up to 24 hours.
+
+Refund and Reversal Policy:
+- Failed bank transfers are automatically reversed within 24 hours.
+- Successfully completed transactions cannot be reversed.
+
+Security Measures:
+- Two-factor authentication (2FA)
+- Encrypted data storage
+- Continuous fraud monitoring
+
+Regulatory Status:
+ZeniPay Technologies Ltd is registered with the Corporate Affairs Commission (CAC) in Nigeria and operates in line with applicable Nigerian regulations.
+
+Supported Currency:
+- Nigerian Naira (₦) only
