@@ -39,18 +39,6 @@ TECH STACK
 - VS Code
 
 -------------------------------------------------
-PROJECT STRUCTURE
--------------------------------------------------
-customer-support-chatbot/
-│
-├── app.py                # Main chatbot application
-├── prompts.py            # Prompt templates (system + user)
-├── company_info.txt      # Grounding knowledge for the chatbot
-├── requirements.txt      # Python dependencies
-├── .env                  # Environment variables (not committed)
-└── README.txt            # Project documentation
-
--------------------------------------------------
 HOW IT WORKS
 -------------------------------------------------
 1. Company information is stored in a plain text file (company_info.txt).
