@@ -118,7 +118,7 @@ Create a `.env` file in the project root:
 AZURE_OPENAI_ENDPOINT=https://YOUR-RESOURCE-NAME.openai.azure.com/
 AZURE_OPENAI_KEY=your_api_key_here
 AZURE_OPENAI_DEPLOYMENT=your_deployment_name
-AZURE_OPENAI_API_VERSION=2024-02-15-preview
+AZURE_OPENAI_API_VERSION=2024-12-01-preview
 ```
 
 ### Step 5: Run the Chatbot
