@@ -90,24 +90,24 @@ This approach ensures **reliable, enterprise-grade behavior** suitable for real 
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/Toby-Xavier/Customer-Support-Chatbot/>
 cd smart-chatbot
 ```
 
 ### Step 2: Create and Activate Virtual Environment
 ```bash
 # Mac/Linux
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 
 # Windows
-python -m venv venv
+python3 -m venv venv
 venv\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### Step 4: Configure Environment Variables
@@ -123,7 +123,7 @@ AZURE_OPENAI_API_VERSION=2024-02-15-preview
 
 ### Step 5: Run the Chatbot
 ```bash
-python app.py
+python3 app.py
 ```
 
 ## Example Questions
@@ -173,10 +173,8 @@ smart-chatbot/
 ├── app.py                   # Main application file
 ├── company_info.txt         # Company knowledge base
 ├── .env                     # Environment variables (not in repo)
-├── .env.example            # Environment template
 ├── requirements.txt         # Python dependencies
 ├── README.md               # Project documentation
-└── .gitignore              # Git ignore rules
 ```
 
 ## Disclaimer
