@@ -7,7 +7,6 @@ This project demonstrates the importance of practical prompt engineering.
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-0078D4.svg)
 ![GPT-4o](https://img.shields.io/badge/Model-GPT--4o--mini-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
