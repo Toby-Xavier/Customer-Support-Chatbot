@@ -1,118 +1,193 @@
-SMART CUSTOMER SUPPORT CHATBOT
-=================================================
+# Smart Customer Support Chatbot
 
-This is a prompt-engineered customer support chatbot built using Python and Azure OpenAI. The chatbot is designed to answer customer questions accurately and safely by relying strictly on company-provided information, with strong controls to prevent hallucinations.
+A prompt-engineered customer support chatbot built using Python and Azure OpenAI. The chatbot is designed to answer customer questions accurately and safely by relying strictly on company-provided information, with strong controls to prevent hallucinations.
 
-This project is built to demonstrate the importance of practical prompt engineering.
+This project demonstrates the importance of practical prompt engineering.
 
--------------------------------------------------
-PROJECT OVERVIEW
--------------------------------------------------
-The Smart Customer Support Chatbot simulates a first-level customer support agent for a Nigerian fintech company (ZeniPay Technologies Ltd).
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Azure OpenAI](https://img.shields.io/badge/Azure-OpenAI-0078D4.svg)
+![GPT-4o](https://img.shields.io/badge/Model-GPT--4o--mini-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-The chatbot:
-- Answers customer questions using only approved company information
-- Refuses to answer questions outside its knowledge base
-- Maintains a professional and customer-friendly tone
-- Prevents hallucinations through strict prompt constraints
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [How It Works](#how-it-works)
+- [Prompt Engineering Strategy](#prompt-engineering-strategy)
+- [Setup Instructions](#setup-instructions)
+- [Example Questions](#example-questions)
+- [Model Usage](#model-usage)
+- [Project Structure](#project-structure)
+- [Disclaimer](#disclaimer)
 
-This project focuses on PROMPT DESIGN and AI INTEGRATION rather than model training.
+## Project Overview
 
--------------------------------------------------
-KEY FEATURES
--------------------------------------------------
-- Role-based system prompting
-- Strict grounding using external company knowledge
-- Explicit refusal patterns for unsupported queries
-- Low-temperature configuration to reduce hallucinations
-- Azure OpenAI deployment-based model usage
-- Simple and clear Python implementation
+The Smart Customer Support Chatbot simulates a first-level customer support agent for a Nigerian fintech company (**ZeniPay Technologies Ltd**).
 
--------------------------------------------------
-TECH STACK
--------------------------------------------------
-- Python 3
-- Azure OpenAI
-- GPT-4o-mini (via Azure deployment)
-- openai Python SDK
-- python-dotenv
-- VS Code
+### The chatbot:
+- ✅ Answers customer questions using only approved company information
+- ✅ Refuses to answer questions outside its knowledge base
+- ✅ Maintains a professional and customer-friendly tone
+- ✅ Prevents hallucinations through strict prompt constraints
 
--------------------------------------------------
-HOW IT WORKS
--------------------------------------------------
-1. Company information is stored in a plain text file (company_info.txt).
-2. A detailed system prompt defines the chatbot’s role, rules, and behavior.
-3. User questions are combined with the company information and passed to Azure OpenAI.
-4. The model generates responses strictly based on the provided information.
-5. If a question cannot be answered using the company data, the chatbot responds with a safe refusal.
+**This project focuses on PROMPT DESIGN and AI INTEGRATION rather than model training.**
 
--------------------------------------------------
-PROMPT ENGINEERING STRATEGY
--------------------------------------------------
+## Key Features
+
+- **Role-based system prompting**: Defines clear agent behavior and boundaries
+- **Strict grounding**: Uses external company knowledge base for accuracy
+- **Explicit refusal patterns**: Handles unsupported queries gracefully
+- **Low-temperature configuration**: Reduces hallucinations and improves consistency
+- **Azure OpenAI deployment**: Enterprise-grade model access
+- **Simple implementation**: Clean, maintainable Python code
+
+## Tech Stack
+
+### Core Technologies
+- **Python 3.8+**: Core programming language
+- **Azure OpenAI**: Enterprise AI platform
+- **GPT-4o-mini**: Language model (via Azure deployment)
+
+### Libraries & Tools
+- **openai**: Python SDK for Azure OpenAI
+- **python-dotenv**: Environment variable management
+- **VS Code**: Development environment
+
+## How It Works
+
+```
+1. Company Info (company_info.txt) → 2. System Prompt → 3. User Question → 4. Azure OpenAI → 5. Response
+```
+
+### Process Flow:
+
+1. **Company information** is stored in a plain text file (`company_info.txt`)
+2. A **detailed system prompt** defines the chatbot's role, rules, and behavior
+3. **User questions** are combined with the company information and passed to Azure OpenAI
+4. The **model generates responses** strictly based on the provided information
+5. If a question cannot be answered, the chatbot responds with a **safe refusal**
+
+## Prompt Engineering Strategy
+
 The chatbot uses a carefully designed system prompt that enforces:
 
-- Explicit role definition (customer support agent)
-- Hard constraints on allowed information
-- Clear refusal behavior for unknown or unsupported queries
-- Controlled tone and response formatting
-- Safety rules to avoid assumptions or regulatory claims
+| Strategy | Implementation |
+|----------|---------------|
+| **Role Definition** | Explicit customer support agent identity |
+| **Hard Constraints** | Only uses provided company information |
+| **Refusal Behavior** | Clear responses for unknown queries |
+| **Tone Control** | Professional and customer-friendly language |
+| **Safety Rules** | Avoids assumptions or regulatory claims |
 
-This approach ensures reliable, enterprise-grade behavior suitable for real customer-facing systems.
+This approach ensures **reliable, enterprise-grade behavior** suitable for real customer-facing systems.
 
--------------------------------------------------
-SETUP INSTRUCTIONS
--------------------------------------------------
+## Setup Instructions
 
-1. Clone the repository
-   git clone <your-repo-url>
-   cd smart-chatbot
+### Prerequisites
+- Python 3.8 or higher
+- Azure OpenAI account with deployment
+- API key and endpoint
 
-2. Create and activate a virtual environment
-   python -m venv venv
-   source venv/bin/activate   (Mac/Linux)
-   venv\Scripts\activate      (Windows)
+### Step 1: Clone the Repository
+```bash
+git clone <your-repo-url>
+cd smart-chatbot
+```
 
-3. Install dependencies
-   pip install -r requirements.txt
+### Step 2: Create and Activate Virtual Environment
+```bash
+# Mac/Linux
+python -m venv venv
+source venv/bin/activate
 
-4. Create a .env file in the project root with the following values:
+# Windows
+python -m venv venv
+venv\Scripts\activate
+```
 
-   AZURE_OPENAI_ENDPOINT=https://YOUR-RESOURCE-NAME.openai.azure.com/
-   AZURE_OPENAI_KEY=your_api_key_here
-   AZURE_OPENAI_DEPLOYMENT=your_deployment_name
-   AZURE_OPENAI_API_VERSION=2024-02-15-preview
+### Step 3: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-5. Run the chatbot
-   python app.py
+### Step 4: Configure Environment Variables
 
--------------------------------------------------
-EXAMPLE QUESTIONS
--------------------------------------------------
-Supported:
+Create a `.env` file in the project root:
+
+```env
+AZURE_OPENAI_ENDPOINT=https://YOUR-RESOURCE-NAME.openai.azure.com/
+AZURE_OPENAI_KEY=your_api_key_here
+AZURE_OPENAI_DEPLOYMENT=your_deployment_name
+AZURE_OPENAI_API_VERSION=2024-02-15-preview
+```
+
+### Step 5: Run the Chatbot
+```bash
+python app.py
+```
+
+## Example Questions
+
+### Supported Questions (Correctly Answered)
+```
 - What are your support hours?
 - What is the transaction limit for Level 2 KYC?
 - Which banks are supported?
 - Is there a fee for bank transfers?
+```
 
-Unsupported (correctly refused):
+### Unsupported Questions (Correctly Refused)
+```
 - Can I send money to Ghana?
 - Do you offer crypto services?
 - Is ZeniPay licensed by the CBN?
 - How can I bypass KYC?
+```
 
--------------------------------------------------
-MODEL USAGE
--------------------------------------------------
-This project uses Azure OpenAI deployments rather than hard-coded model names.
+The chatbot will politely refuse to answer questions outside its knowledge base, maintaining safety and accuracy.
 
-Recommended models:
-- GPT-4o
-- GPT-4o-mini
+## Model Usage
 
-The prompt design is model-agnostic and compatible with future GPT upgrades.
+This project uses **Azure OpenAI deployments** rather than hard-coded model names.
 
--------------------------------------------------
-DISCLAIMER
--------------------------------------------------
-ZeniPay Technologies Ltd is a fictional company created solely for demonstration and educational purposes.
+### Recommended Models:
+- **GPT-4o** (Most capable)
+- **GPT-4o-mini** (Cost-effective, faster)
+
+The prompt design is **model-agnostic** and compatible with future GPT upgrades.
+
+### Configuration:
+```python
+response = client.chat.completions.create(
+    model=deployment_name,
+    messages=[...],
+    temperature=0.3,  # Low temperature for consistency
+    max_tokens=500
+)
+```
+
+## Project Structure
+
+```
+smart-chatbot/
+├── app.py                   # Main application file
+├── company_info.txt         # Company knowledge base
+├── .env                     # Environment variables (not in repo)
+├── .env.example            # Environment template
+├── requirements.txt         # Python dependencies
+├── README.md               # Project documentation
+└── .gitignore              # Git ignore rules
+```
+
+## Disclaimer
+
+**ZeniPay Technologies Ltd** is a **fictional company** created solely for demonstration and educational purposes.
+
+This project is designed to showcase:
+- Prompt engineering best practices
+- Safe AI integration patterns
+- Enterprise chatbot design
+- Grounded response generation
+
+**No real financial services are provided.**
